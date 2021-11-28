@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container-flued">
+        <section>
+        <div class="row m-0">
+            <div class="col-12 ganral_img">
+                <div class="row m-0">
+                    <div class="col-6"><img src="photo/logo.svg" class="img_logo"></div>
+                    <div class="col-6 col_Link">
+                        <ul class="list_link">
+                            <li class="item_link"><a class="link" href="#">Inventory</a></li>
+                            <li class="item_link"><a class="link" href="#">Financing</a></li>
+                            <li class="item_link"><a class="link" href="#">Contacts</a></li>
+                            <li class="item_link"><a class="link" href="#"><img src="photo/face.svg"></a></li>
+                            <li class="item_link"><a class="link" href="#"><img src="photo/inft.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h1 id="h1">The right way to get a car</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 pr-0">
+                        <p class="par_prev">Monza Motorsports is a boutique-style dealership specializing in premium imports. We offer an advanced online vehicle purchasing experience with integrated financing and contactless home delivery.</p>
+                    </div>
+                    <div class="col-3 px-0">
+                        <p class="par_prev">All of our cars come with a 5 day/500 kilometres no-hassle exchange option. Since 2012 Monza Motorsports has been the benchmark for innovation in the automotive industry.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button id="btn_Browse">Browse cars</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section>
+        <div class="row m-0 ">
+            <div class="col-12">
+                <h2 id="h2">CURRENT OFFERS</h2>
+            </div>
+        </div>
+            <div class="row mx-0 ganSp">
+                <div class="col-12 dropdown-around">
+                    <div>
+                        <button class="month droppdown_btn" onclick="opensaktion(this);">Year
+                        <img src="photo/arrow.svg" class="arrow_aktion">
+                        </button>
+                        <div class="dropedownList active">
+                            <ul>
+                                <li class="list_item"><p class="dro_link">2021</p></li>
+                                <li class="list_item"><p class="dro_link">2020</p></li>
+                                <li class="list_item"><p class="dro_link">2019</p></li>
+                                <li class="list_item"><p class="dro_link">2018</p></li>
+                                <li class="list_item"><p class="dro_link">2017</p></li>
+                                <li class="list_item"><p class="dro_link">2016</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="month droppdown_btn" onclick="opensaktion(this);">Make
+                            <img src="photo/arrow.svg" class="arrow_aktion">
+                        </button>
+                        <div class="dropedownList active">
+                            <ul>
+                                <li class="list_item"><p class="dro_link">Honda</p></li>
+                                <li class="list_item"><p class="dro_link">Kia</p></li>
+                                <li class="list_item"><p class="dro_link">Toyota</p></li>
+                                <li class="list_item"><p class="dro_link">Volkswagen</p></li>
+                                <li class="list_item"><p class="dro_link">Toyota</p></li>
+                                <li class="list_item"><p class="dro_link">Volkswagen</p></li>
+                                <li class="list_item"><p class="dro_link">Honda</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="month droppdown_btn" onclick="opensaktion(this);">Model
+                            <img src="photo/arrow.svg" class="arrow_aktion">
+                        </button>
+                        <div class="dropedownList active">
+                            <ul>
+                                <li class="list_item"><p class="dro_link">one</p></li>
+                                <li class="list_item"><p class="dro_link">twoo</p></li>
+                                <li class="list_item"><p class="dro_link">more</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="month droppdown_btn" onclick="opensaktion(this);">Trim
+                            <img src="photo/arrow.svg" class="arrow_aktion">
+                        </button>
+                        <div class="dropedownList active">
+                            <ul>
+                                <li class="list_item"><p class="dro_link">leather</p></li>
+                                <li class="list_item"><p class="dro_link">velvet</p></li>
+                                <li class="list_item"><p class="dro_link">dermantin</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="month droppdown_btn" onclick="opensaktion(this);">Mileage
+                            <img src="photo/arrow.svg" class="arrow_aktion">
+                        </button>
+                        <div class="dropedownList active">
+                            <ul>
+                                <li class="list_item"><p class="dro_link">one</p></li>
+                                <li class="list_item"><p class="dro_link">twoo</p></li>
+                                <li class="list_item"><p class="dro_link">more</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="cars">40 cars</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row mx-0 intger_position">
+                <div class="col-6">
+                    <form method="post" action="input5.php">
+                        <label class="m-0">
+                            <input type="checkbox" name="option1" class="checkbox_filter">
+                            <span class="fakecheckbox"></span>
+                            <p class="lable_chbox m-0">Instantly available vehicles</p>
+                        </label>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <div id="publication">
+                    <p class="p_sort">Sort by</p><img class="top_rrow" src="photo/arrowtop.svg"><img class="arrow_bott" src="photo/arrowbottom.svg">
+                        <div>
+                            <p class="p_publ" onclick="togledate(this);">
+                                Publication date (ascending)
+                            </p>
+                            <div class="date_dropdown">
+                                <p class="p_dT">Publication date (descending)</p>
+                                <p class="p_dT">Price (ascending)</p>
+                                <p class="p_dT">Price (descending)</p>
+                                <p class="p_dT">Mileage (ascending)</p>
+                                <p class="p_dT">Mileage (descending)</p>
+                                <p class="p_dT">Performance (ascending)</p>
+                                <p class="p_dT">Performance (descending)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row mx-0 contant_car">
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Volkswagen Tiguan1.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2019
+                                <a href="#" class="card-link">Volkswagen Tiguan</a>
+                            </h5>
+                            <p class="card-text distance">19,855 km | Automatic | Diesel</p>
+                            <p class="card-text price">$34,888</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Toyota Highlander XLE2.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2014
+                                <a href="#" class="card-link">Toyota Highlander XLE</a>
+                            </h5>
+                            <p class="card-text distance">69,000 km | Automatic | Gas</p>
+                            <p class="card-text price">$27,875</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Lexus RX 350 LUXURY3.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2017
+                                <a href="#" class="card-link">Lexus RX 350 LUXURY</a>
+                            </h5>
+                            <p class="card-text distance">39,850 km | Automatic | Gas</p>
+                            <p class="card-text price">$38,775</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Toyota Highlander LE A4.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2016
+                                <a href="#" class="card-link">Toyota Highlander LE A...</a>
+                            </h5>
+                            <p class="card-text distance">104,000 km | Automatic | Gas</p>
+                            <p class="card-text price">$23,728</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row mx-0 contant_car">
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Hyundai Elantra5.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2017
+                                <a href="#" class="card-link">photo/Hyundai Elantra</a>
+                            </h5>
+                            <p class="card-text distance">95,000  km | Automatic | Gas</p>
+                            <p class="card-text price">$11,788</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Mercedes-Benz GLE-Cl...6.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2016
+                                <a href="#" class="card-link">Mercedes-Benz GLE-Cl...</a>
+                            </h5>
+                            <p class="card-text distance">59,800 km | Automatic | Diesel</p>
+                            <p class="card-text price">$38,878</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Toyota Venza AWD XLE...7.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2015
+                                <a href="#" class="card-link">Toyota Venza AWD XLE...</a>
+                            </h5>
+                            <p class="card-text distance">99,000 km | Automatic | Gas</p>
+                            <p class="card-text price">$18,620 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Lexus RX 350 F-SPORT8.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2016
+                                <a href="#" class="card-link">Lexus RX 350 F-SPORT</a>
+                            </h5>
+                            <p class="card-text distance">86,000 km | Automatic | Gas</p>
+                            <p class="card-text price">$34,888</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row mx-0 contant_car">
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Volkswagen Tiguan1.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2019
+                                <a href="#" class="card-link">Volkswagen Tiguan</a>
+                            </h5>
+                            <p class="card-text distance">19,855 km | Automatic | Diesel</p>
+                            <p class="card-text price">$34,888</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Toyota Highlander XLE2.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2014
+                                <a href="#" class="card-link">Toyota Highlander XLE</a>
+                            </h5>
+                            <p class="card-text distance">69,000 km | Automatic | Gas</p>
+                            <p class="card-text price">$27,875</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Lexus RX 350 LUXURY3.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2017
+                                <a href="#" class="card-link">Lexus RX 350 LUXURY</a>
+                            </h5>
+                            <p class="card-text distance">39,850 km | Automatic | Gas</p>
+                            <p class="card-text price">$38,775</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Toyota Highlander LE A4.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2016
+                                <a href="#" class="card-link">Toyota Highlander LE A...</a>
+                            </h5>
+                            <p class="card-text distance">104,000 km | Automatic | Gas</p>
+                            <p class="card-text price">$23,728</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row mx-0 contant_car">
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Volkswagen Tiguan1.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2019
+                                <a href="#" class="card-link">Volkswagen Tiguan</a>
+                            </h5>
+                            <p class="card-text distance">19,855 km | Automatic | Diesel</p>
+                            <p class="card-text price">$34,888</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Toyota Highlander XLE2.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2014
+                                <a href="#" class="card-link">Toyota Highlander XLE</a>
+                            </h5>
+                            <p class="card-text distance">69,000 km | Automatic | Gas</p>
+                            <p class="card-text price">$27,875</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Lexus RX 350 LUXURY3.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2017
+                                <a href="#" class="card-link">Lexus RX 350 LUXURY</a>
+                            </h5>
+                            <p class="card-text distance">39,850 km | Automatic | Gas</p>
+                            <p class="card-text price">$38,775</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Toyota Highlander LE A4.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2016
+                                <a href="#" class="card-link">Toyota Highlander LE A...</a>
+                            </h5>
+                            <p class="card-text distance">104,000 km | Automatic | Gas</p>
+                            <p class="card-text price">$23,728</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row mx-0 contant_car">
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Hyundai Elantra5.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2017
+                                <a href="#" class="card-link">photo/Hyundai Elantra</a>
+                            </h5>
+                            <p class="card-text distance">95,000  km | Automatic | Gas</p>
+                            <p class="card-text price">$11,788</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Mercedes-Benz GLE-Cl...6.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2016
+                                <a href="#" class="card-link">Mercedes-Benz GLE-Cl...</a>
+                            </h5>
+                            <p class="card-text distance">59,800 km | Automatic | Diesel</p>
+                            <p class="card-text price">$38,878</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Toyota Venza AWD XLE...10.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2015
+                                <a href="#" class="card-link">Toyota Venza AWD XLE...</a>
+                            </h5>
+                            <p class="card-text distance">99,000 km | Automatic | Gas</p>
+                            <p class="card-text price">$18,620 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Lexus RX 350 LUXURY3.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2017
+                                <a href="#" class="card-link">Lexus RX 350 LUXURY</a>
+                            </h5>
+                            <p class="card-text distance">39,850 km | Automatic | Gas</p>
+                            <p class="card-text price">$38,775</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row mx-0 contant_car">
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Volkswagen Tiguan1.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2019
+                                <a href="#" class="card-link">Volkswagen Tiguan</a>
+                            </h5>
+                            <p class="card-text distance">19,855 km | Automatic | Diesel</p>
+                            <p class="card-text price">$34,888</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:295px;">
+                        <img class="card-img-top" src="photo/Toyota Highlander XLE2.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2014
+                                <a href="#" class="card-link">Toyota Highlander XLE</a>
+                            </h5>
+                            <p class="card-text distance">69,000 km | Automatic | Gas</p>
+                            <p class="card-text price">$27,875</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </section>
+        <section>
+            <div class="row mx-0 prev_footer">
+                <div class="col-5">
+                    <h4>Haven't found a suitable vehicle?</h4>
+                    <p>Sign up for our newsletter and be the first to know when we publish new vehicle offers.</p>
+                </div>
+                <div class="col-5">
+                    <input type="text" class="input_email" placeholder="Enter your email" id="email">
+                </div>
+                <div class="col-2">
+                    <button class="eamil_submet">Subscribe now</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row m-0">
+                <div class="col">
+                    <h2 class="questions">popular questions</h2>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row mx-0 justify-content-center row_spase">
+                <div class="col-10">
+                    <div class="wrapper" onclick="open_questions_contant(this)">
+                        <img src="photo/+.svg" class="pluse">
+                        <p class="questions_item">1. Scope</p>
+                        <hr class="hr_spase">
+                    </div>
+                    <div class="questions_contant">
+                        <div class="intarnule_wrapper" onclick="close_questions_contant(this)"><img src="photo/-.svg" class="minuse">
+                        <p class="pargraph_dropped">1. Warranty / guarantee</p></div>
+                        1.1 The statutory warranty is completely excluded to the extent permitted by law.
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-0 justify-content-center">
+                <div class="col-10">
+                    <div class="wrapper" onclick="open_questions_contant(this)">
+                        <img src="photo/+.svg" class="pluse">
+                        <p class="questions_item">2. Vehicle characteristics</p>
+                        <hr>
+                    </div>
+                    <div class="questions_contant">
+                        <div class="intarnule_wrapper" onclick="close_questions_contant(this)">
+                            <img src="photo/-.svg" class="minuse">
+                                <p class="pargraph_dropped">2. Warranty / guarantee</p>
+                        </div>
+                        2.1 The statutory warranty is completely excluded to the extent permitted by law.
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-0 justify-content-center">
+                <div class="col-10">
+                    <div class="wrapper" onclick="open_questions_contant(this)">
+                        <img src="photo/+.svg" class="pluse">
+                        <p class="questions_item">3. Warranty / guarantee</p>
+                        <hr>
+                    </div>
+                    <div class="questions_contant">
+                        <div class="intarnule_wrapper" onclick="close_questions_contant(this)">
+                            <img src="photo/-.svg" class="minuse">
+                                <p class="pargraph_dropped">3. Warranty / guarantee</p>
+                        </div>
+                        3.1 The statutory warranty is completely excluded to the extent permitted by law.
+                        3.2 If the vehicle still has a current factory warranty, a sales representative (brand representative) of the manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually agreed beginning of the warranty, if any.
+                        3.3 If there is a special warranty insurance for the vehicle, this will take the place of the material warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the respective warranty service provider apply.
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="row mx-0 justify-content-center">
+                <div class="col-10">
+                    <div class="wrapper" onclick="open_questions_contant(this)">
+                        <img src="photo/+.svg" class="pluse">
+                        <p class="questions_item">4. Trade-in vehicle</p>
+                        <hr>
+                    </div>
+                    <div class="questions_contant">
+                        <div class="intarnule_wrapper" onclick="close_questions_contant(this)">
+                            <img src="photo/-.svg" class="minuse">
+                            <p class="pargraph_dropped">4. Trade-in vehicle</p>
+                        </div>
+                        4 The statutory warranty is completely excluded to the extent permitted by law.
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-0 justify-content-center">
+                <div class="col-10">
+                    <div class="wrapper" onclick="open_questions_contant(this)">
+                        <img src="photo/+.svg" class="pluse">
+                        <p class="questions_item">5. Home Delivery</p>
+                        <hr>
+                    </div>
+                    <div class="questions_contant">
+                        <div class="intarnule_wrapper" onclick="close_questions_contant(this)">
+                            <img src="photo/-.svg" class="minuse">
+                            <p class="pargraph_dropped">5. Home Delivery</p>
+                        </div>
+                        5 The statutory warranty is completely excluded to the extent permitted by law.
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-0 justify-content-center">
+                <div class="col-10">
+                    <div class="wrapper" onclick="open_questions_contant(this)">
+                        <img src="photo/+.svg" class="pluse">
+                        <p class="questions_item">6. Right of return</p>
+                        <hr>
+                    </div>
+                    <div class="questions_contant">
+                        <div class="intarnule_wrapper" onclick="close_questions_contant(this)">
+                            <img src="photo/-.svg" class="minuse">
+                            <p class="pargraph_dropped">6. Right of return</p>
+                        </div>
+                        6 The statutory warranty is completely excluded to the extent permitted by law.
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-0 justify-content-center">
+                <div class="col-10">
+                    <div class="wrapper" onclick="open_questions_contant(this)">
+                        <img src="photo/+.svg" class="pluse">
+                        <p class="questions_item">7. Written form</p>
+                        <hr>
+                    </div>
+                    <div class="questions_contant">
+                        <div class="intarnule_wrapper" onclick="close_questions_contant(this)">
+                            <img src="photo/-.svg" class="minuse">
+                            <p class="pargraph_dropped">7. Written form</p>
+                        </div>
+                        7 The statutory warranty is completely excluded to the extent permitted by law.
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-0 justify-content-center">
+                <div class="col-10">
+                    <div class="wrapper" onclick="open_questions_contant(this)">
+                        <img src="photo/+.svg" class="pluse">
+                        <p class="questions_item">8. Applicable law and place of jurisdiction</p>
+                        <hr>
+                    </div>
+                    <div class="questions_contant">
+                        <div class="intarnule_wrapper" onclick="close_questions_contant(this)">
+                            <img src="photo/-.svg" class="minuse">
+                            <p class="pargraph_dropped">8. Applicable law and place of jurisdiction</p>
+                        </div>
+                        8 The statutory warranty is completely excluded to the extent permitted by law.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row mx-0 footer_spase">
+                <div class="col ">
+                    <img src="photo/logo.svg" class="img_logo_spases">
+                </div>
+                <div class="col justify-content-center">
+                    <ul class="list_link_footer">
+                        <li class="item_link"><a class="link" href="#">Inventory</a></li>
+                        <li class="item_link"><a class="link" href="#">Financing</a></li>
+                        <li class="item_link"><a class="link" href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list_link_susial">
+                        <li class="item_link"><a class="link" href="#"><img src="photo/face.svg"></a></li>
+                        <li class="item_link"><a class="link" href="#"><img src="photo/inft.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
